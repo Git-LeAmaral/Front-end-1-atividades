@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  
+  background: linear-gradient(331deg, rgba(11,1,8,0.8855917366946778) 10%, rgba(18,133,237,0.9220063025210083) 36%, rgba(65,141,190,0.8687850140056023) 52%, rgba(175,161,148,0.9248074229691877) 69%);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    padding: 0 1rem;
+    background: rgb(34,193,195);
+background: linear-gradient(13deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.969625350140056) 69%);
+}
+
+.cabecalho img {
+    width: 15rem;
+}
+
+.barra-navegacao ul {
+    display: flex;
+    font-size: 2rem;
+    gap: 1rem; 
+}
+
+li {
+    list-style: none;
+}
+
+.barra-navegacao a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.conteudo-principal {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    min-height: fit-content;
+
+}
+
+.conteudo-principal h1 {
+
+    font-size: 3.5rem;
+    color: #ff4500;
+    text-shadow: 4px 4px 2px rgb(20, 18, 18);
+    margin: 4rem 0 -2rem;
+
+}
+
+.banner {
+    
+    width: 100%;
+    /* min-height: 100vh; */
+    /* border: 3px solid blue; */
+
+}
+
+.banner img {
+
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    object-fit: cover;
+
+}
+
+.sessao-cards {
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    
+
+}
+
+.lista-dbz {
+
+    width: 320px;
+    height: 520px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.56s;
+
+}
+
+.lista-dbz:hover {
+
+  top: -50px;
+
+}
+
+
+.cards {
+    
+    display: flex;
+    gap: 30px;
+    /* position: absolute; */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 10px 5px;
+    background: linear-gradient(0deg, rgba(11,1,8,0.8855917366946778) 10%, rgba(16,17,18,0.9220063025210083) 36%, rgba(22,27,29,0.8687850140056023) 52%, rgba(175,161,148,0.9248074229691877) 86%);
+
+}
+
+/* .sessao-cards {
+
+    display: flex;
+    flex-direction: column;
+
+} */
+
+.fundo-1 {
+
+    background: url(../assets/fundo-site.png) no-repeat;
+    border-radius: 15px;
+    border: 5px solid grey;
+}
+
+.fundo-2 {
+
+  background: url(../assets/PlanetStage3.png) no-repeat;
+  border-radius: 15px;
+  border: 5px solid grey;
+  
+}
+
+.fundo-3 {
+
+  background: url(..//assets/costa.png) no-repeat;
+  border-radius: 15px;
+  border: 5px solid grey;
+  
+}
+
+.cards .informacoes {
+
+    padding: 10px;
+    color: #f1ecff;
+
+}
+
+.cards .container-imagem {
+
+    text-align: center;
+
+}
+
+.cards .imagem-guerreiros {
+
+    max-width: 100%;
+    max-height: 290px;
+
+}
+
+.cards .descricao {
+
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.cards .descricao .titulo {
+
+    background-color: #333;
+    color: #f1ecff;
+    font-size: 15px;
+    padding: 12px;
+
+}
+
+.cards .descricao .texto {
+
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+}
+
+.postagem {
+
+    padding: 0.625rem;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+}
+
+.postagem h2 {
+
+    font-size: 3.5rem;
+    color: #ff4500;
+    text-shadow: 4px 4px 2px rgb(20, 18, 18);
+
+}
+
+.postagem .video {
+
+    width: 70rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.9375rem;
+    /* background: linear-gradient(0deg, rgba(11,1,8,0.8855917366946778) 10%, rgba(16,17,18,0.9220063025210083) 36%, rgba(22,27,29,0.8687850140056023) 52%, rgba(175,161,148,0.9248074229691877) 86%); */
+    border-radius: 0.93rem;
+
+}
+
+.rodape {
+
+    background-color: yellow;
+    min-height: 2.2rem;
+    margin-top: 2rem;
+
+}
+
+.rodape .copy {
+
+    display: flex;
+    justify-content: end;
+    padding: 1.3rem;
+    font-size: 1rem;
+
+}
+
+.frase-final {
+
+    background-color: #333;
+    color: #f1ecff;
+    text-align: center;
+
+}
+

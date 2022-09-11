@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cadastro-formulario {
+
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.controlador {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.controlador input {
+    padding: 10px;
+    background-color: gray;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttons-formulario {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-formulario button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: none;
+}
+
+.buttons-formulario button.limpar {
+    background-color: blue;
+    color: white;
+}
+
+.buttons-formulario button.enviar {
+    background-color: green;
+    color: white;
+}

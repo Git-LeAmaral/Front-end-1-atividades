@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho h3 {
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #1cd180;
+}
+
+.cabecalho h1 {
+    font-size: 40px;
+    font-weight: 400;
+    background-color: #00669f;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.dc-card  {
+    width: 400px;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    background-color: #fff9f9ee;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dc-card .curtir {
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+}
+
+.dc-card .background-image {
+  width: 100%;
+}
+
+.dc-card .profile-image {
+  display: block;
+  width: 135px;
+  height: 135px;
+  border-radius: 100%;
+  margin: -80px auto 15px;
+  object-fit: cover;
+}
+
+.dc-card h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.dc-card p {
+    font-size: 16px;
+    color: #333333;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dc-card button {
+    width: 145px;
+    height: 54px;
+    margin: 0 0 20px 130px;
+    font-size: 16px;
+    background-color: #00669f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.rodape p {
+    margin-top: 100px;
+    height: 51px;
+    padding: 17px 28px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #00669f;
+    color: #FFF9F9;
+}

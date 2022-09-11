@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.hero-card {
+    width: 400px;
+    background-color: blueviolet;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-card .favorite-icon {
+    width: 24px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.hero-card .background-image {
+    width: 100%;
+}
+
+.hero-card .profile-image {
+   display: block;   
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+   border-radius: 100%;
+   margin: auto;
+}
