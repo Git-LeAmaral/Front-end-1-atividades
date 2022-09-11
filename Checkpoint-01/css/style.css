@@ -20,6 +20,7 @@ body {
     padding: 0 1rem;
     background: rgb(34,193,195);
 background: linear-gradient(13deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.969625350140056) 69%);
+    
 }
 
 .cabecalho img {
@@ -34,11 +35,19 @@ background: linear-gradient(13deg, rgba(34,193,195,1) 0%, rgba(253,187,45,0.9696
 
 li {
     list-style: none;
+    transition: all 0.6s ease-in-out;
 }
+
+.barra-navegacao li:hover {
+
+    border: 1px solid #8b0000;
+    border-radius: 12px;
+    padding: 10px;
+} 
 
 .barra-navegacao a {
     text-decoration: none;
-    color: darkred;
+    color: #8b0000;
 }
 
 .conteudo-principal {
@@ -64,8 +73,6 @@ li {
 .banner {
     
     width: 100%;
-    /* min-height: 100vh; */
-    /* border: 3px solid blue; */
 
 }
 
@@ -110,20 +117,12 @@ li {
     
     display: flex;
     gap: 30px;
-    /* position: absolute; */
     padding: 15px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.50) 0px 10px 5px;
     background: linear-gradient(0deg, rgba(11,1,8,0.8855917366946778) 10%, rgba(16,17,18,0.9220063025210083) 36%, rgba(22,27,29,0.8687850140056023) 52%, rgba(175,161,148,0.9248074229691877) 86%);
 
 }
-
-/* .sessao-cards {
-
-    display: flex;
-    flex-direction: column;
-
-} */
 
 .fundo-1 {
 
@@ -225,16 +224,45 @@ li {
     background-color: yellow;
     min-height: 2.2rem;
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
 
 }
 
 .rodape .copy {
 
-    display: flex;
-    justify-content: end;
-    padding: 1.3rem;
     font-size: 1rem;
 
+}
+
+.rodape .icons ul {
+
+    display: flex;
+    
+}
+
+.rodape .icons a {
+
+    color: #333;
+}
+
+.rodape .icons i {
+
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.rodape .icons li {
+
+    transition: all 0.6s;
+}
+
+.rodape .icons li:hover {
+
+    transform: scale(2);
 }
 
 .frase-final {
@@ -243,5 +271,45 @@ li {
     color: #f1ecff;
     text-align: center;
 
+}
+
+@media (max-width: 780px) {
+
+    .cabecalho {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .barra-navegacao ul {
+        flex-direction: column;
+    }
+
+    .titulo-card {
+        margin-bottom: 25px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .lista-dbz {
+        width: 100%;
+    }
+
+    .postagem h2 {
+        text-align: center;
+    }
+
+    .video {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .video iframe {
+        width: 300px;
+    }
+    
 }
 
