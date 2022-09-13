@@ -89,11 +89,10 @@ li {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 24px;
+    gap: 35px;
     
-
 }
 
 .lista-dbz {
@@ -214,9 +213,6 @@ li {
     padding: 1rem;
     display: flex;
     gap: 0.9375rem;
-    /* background: linear-gradient(0deg, rgba(11,1,8,0.8855917366946778) 10%, rgba(16,17,18,0.9220063025210083) 36%, rgba(22,27,29,0.8687850140056023) 52%, rgba(175,161,148,0.9248074229691877) 86%); */
-    border-radius: 0.93rem;
-
 }
 
 .rodape {
@@ -291,10 +287,18 @@ li {
     .cards {
         flex-wrap: wrap;
         align-items: center;
-        width: 100%;
     }
     .lista-dbz {
         width: 100%;
+        padding: 10px;
+    }
+
+    .postagem {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        margin-top: 10px;
+        
     }
 
     .postagem h2 {
@@ -303,12 +307,11 @@ li {
 
     .video {
         flex-direction: column;
-        align-items: center;
-        
+        justify-content: center;
     }
 
     .video iframe {
-        width: 300px;
+        width: 250px;
     }
     
 }

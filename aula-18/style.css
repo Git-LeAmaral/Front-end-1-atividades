@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes animation-background {
+    0% {
+        background-color: #85e933;
+    }
+
+    50% {
+        background-color: #dbbc0d;
+    }
+
+    100% {
+        background-color: #ec1212;
+    }
+}
+
+body {
+    background-color: #333;
+    animation-name: animation-background;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-header {
+      0% {
+         top: -90px;
+         opacity: 0;
+      }
+
+      100% {
+          top: 0;
+          opacity: 1;
+      }
+}
+
+header {
+    height: 90px;
+    background-color: #333;
+    color:beige;
+    position: relative;
+    opacity: 0;
+    animation-name: animation-header;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.bem-vindo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animation-welcome {
+    0% {
+        opacity: 0;
+        transform: scale(3) rotate(360deg);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bem-vindo h1 {
+    opacity: 0;
+    font-size: 35px;
+    animation-name: animation-welcome;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
