@@ -44,9 +44,7 @@ a {
 }
 
 .container .checkpoint, .aula {
-    width: 200px;
     height: 350px;
-    border: 1px solid #f0f8ff;
     border-radius: 10px;
     padding: 10px;
     display: flex;
