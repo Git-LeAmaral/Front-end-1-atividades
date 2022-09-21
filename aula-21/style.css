@@ -1,0 +1,29 @@
+.navbar-custom {
+    background-color: #333;
+    
+}
+
+.navbar-custom a {
+    color: #f0f8ff;
+}
+
+.navbar-custom a:hover {
+    color: #e8eb54;
+}
+
+.content .welcome {
+    background-color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .welcome h1 {
+    color: #f0f8ff;
+}
+
+.content .products {
+    background-color: #f0f8ff;
+    min-height: 100%;
+}
