@@ -1,10 +1,11 @@
 body {
     background: url(../assets/game-over.jpg);
-    /* width: 100%; */
     min-height: 100vh;
+    overflow-x: hidden;
     position: relative;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
@@ -17,17 +18,32 @@ body::before {
     z-index: -1;
 }
 
-.cabecalho .container-personalizada {
-    display: flex;
-    justify-content: space-between;
-    color: #e7e2f0;
+.cabecalho .nav-personalizada {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.cabecalho .container-personalizada img {
+    width: 70px;
+    margin-left: 15px;
 }
 
 .cabecalho a {
     color: #e7e2f0;
 }
 
-.button-login {
+.cabecalho .menu-personalizado a:hover {
+    color: #c1abeb;
+}
+
+.container-personalizada .button-nav {
+    background-color: rgba(238, 227, 222, 0.644);
+}
+
+.button-explorar {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -35,28 +51,39 @@ body::before {
     flex-direction: column;
 }
 
-.button-login h1 {
+.button-explorar h1 {
     color: #da5e0c;
     font-size: 54px;
-    margin: 0 0 0 -500px;
+    margin: 0 0 0 -328px;
 }
 
-.button-login p {
+.button-explorar p {
     color: #e7e2f0;
     font-size: 24px;
     margin: 0 0 30px -328px;
 } 
 
-.button-login .btn-personalizado {
+.button-explorar .btn-personalizado {
     width: 322px;
     height: 68px;
     font-size: 24px;
     color: #e7e2f0;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px #e7e2f0;
-    box-shadow: inset 0 0 32px #e7e2f0, 0 0 32px #e7e2f0;
+    box-shadow: inset 0 0 32px #e7e2f0, 0 0 25px #e7e2f0;
     border-radius: 18px;
     border: 2px solid #e7e2f0;
     position: relative;
+}
+
+.button-explorar .btn-personalizado a {
+    text-decoration: none;
+    color: #e7e2f0;
+    font-size: 26px;
+    transition: .5s;
+}
+
+.button-explorar .btn-personalizado a:hover {
+    color: #333;
 }
 
 .btn-personalizado::before {
@@ -81,15 +108,14 @@ body::before {
     bottom: 0;
     border-radius: 18px;
     background-color: #e7e2f0;
-    box-shadow: 0 0 128px 32px #e7e2f0;
     z-index: -1;
     opacity: 0;
-    transition: opacity 100ms linear;
+    transition: opacity .5s linear;
 }
 
 .btn-personalizado:hover::after,
 .btn-personalizado:focus::after {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .btn-personalizado:hover::before,
@@ -100,5 +126,110 @@ body::before {
 .btn-personalizado:hover,
 .btn-personalizado:focus {
     color: black;
+    border: #e7e2f0;
     text-shadow: none;
+}
+
+.games {
+    background-color: rgba(231, 226, 240, 0.2);
+}
+
+.games h2 {
+    text-align: center;
+    padding: 60px;
+    font-size: 54px;
+    color: #da5e0c;
+}
+
+.games .games-personalizado div {
+    padding-bottom: 12px;
+}
+
+.cards-personalizado .card-descricao {
+    background-color: rgba(182, 174, 174, 0.829);
+}
+
+.card-descricao .btn-descricao-card {
+    background-color: #d7722f;
+    border: none;
+    transition: .4s;
+}
+
+.card-descricao .btn-descricao-card:hover {
+    background-color: #ee6001ca;
+}
+
+.cards-personalizado .card-descricao img {
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+    
+}
+.cards-personalizado, .card-descricao {
+transition: 0.5s !important;
+}
+
+.cards-personalizado :hover{
+    scale: 1.02;
+}
+
+.card-descricao :hover{
+    scale: none;
+}
+
+
+.rodape .card-personalizado div {
+    padding: 24px;
+    color: #e7e2f0;
+    background-color: #333;
+}
+
+.rodape h5 {
+    font-size: 24px;
+}
+
+.rodape .card-personalizado i {
+    font-size: 24px;
+    background-color: #333;
+    padding: 12px 15px 0 0;
+    transition: linear .4s;
+}
+
+.rodape .card-personalizado a {
+    color: #c1abeb;
+}
+
+.rodape .card-personalizado i:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 970px) {
+    .menu-central h1 {
+        margin: 0;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+    
+    .menu-central p {
+        margin: 0;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .menu-central h1 {
+        font-size: 40px;
+    }
+
+    .menu-central p {
+        font-size: 18px;
+    }
+
+    .button-explorar .btn-personalizado {
+        width: 200px;
+        height: 48px;
+        font-size: 16px;
+        padding: 0 auto;
+    }
 }
